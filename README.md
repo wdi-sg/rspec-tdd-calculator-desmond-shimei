@@ -25,8 +25,8 @@ As the writer of tests your intention is to create tests that force a robust imp
 As the writer of the code to pass the test, you want to implement the bare minimum to pass the test.
 
 #### Tasks
-0. **Initialize:* ```my_calculator = Calculator.new(1)``` would assign 1 to the be the starting result of the new my_calculator instance.
-0. **Results:* ```my_calculator.result``` would return the current result - that should be readonly. ```my_calculator.reset(x)``` would reset the calculator to x.
+0. **Initialize:** ```my_calculator = Calculator.new(1)``` would assign 1 to the be the starting result of the new my_calculator instance.
+0. **Results:** ```my_calculator.result``` would return the current result - that should be readonly. ```my_calculator.reset(x)``` would reset the calculator to x.
 0. **Addition:** ```my_calculator.add(x)``` would add x to the internal result value, if x can be a valid number
 0. **Subtraction:** ```my_calculator.subtract(x)``` would subtract x from the internal result value, if x can be a valid number
 0. **Multiply:** ```my_calculator.multiply(x)``` would multiply x by the internal result value and save the new value, if x can be a valid number
