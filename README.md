@@ -33,8 +33,8 @@ As the writer of the code to pass the test, you want to implement the bare minim
 0. **Divide:** ```my_calculator.divide(x)``` would divide the internal result value by x and save the new value, if x can be a valid number
 0. **Chain:** ```my_calculator.add(x).subtract(y)``` all methods should be chainable in any order
 0. **Operation:** ```my_calculator.operation('add', x)``` would apply the addition operation with the value of x. It should support all operations
-0. **Undo:** ```my_calculator.undo(x)``` should undo the previous operation, restoring the result value, if x can be a valid number
-0. **Redo:** ```my_calculator.redo(x)``` should redo the previously undone operation, restoring the result value. If a new action is executed it should remove the ability to perform redos.
+0. **Undo:** ```my_calculator.undo``` should undo the previous operation, restoring the result value.
+0. **Redo:** ```my_calculator.redo``` should redo the previously undone operation, restoring the result value. If a new action is executed it should remove the ability to perform redos.
 
 ## Additional Resources
 
