@@ -2,9 +2,9 @@
 
 ## Introduction
 
-> This will be a ping pong exercise, which means you'll be paired up with the person sitting next to you, and only _one_ of you can have your computer open at a time - it is probabaly easiest to just share the machine.
+> This will be a ping pong exercise, which means you'll be paired up with the person sitting next to you, and only _one_ of you can have your computer open at a time - it is probably easiest to just share the machine.
 
-> For each task, one person (p1) will take 10 minutes to write somes tests before passing the laptop over to the other (p2) to write the code to pass the tests. After the tests have all been passed, the first person (p1) who will then write more tests. Repeat this process until the task is complete.
+> For each task, one person (p1) will take 10 minutes to write some tests before passing the laptop over to the other (p2) to write the code to pass the tests. After the tests have all been passed, the first person (p1) who will then write more tests. Repeat this process until the task is complete.
 
 > When moving onto each new task, you should swap roles. So p1 does even numbered tasks and p2 does odd numbered tasks.
 
@@ -15,7 +15,7 @@
   * Run `rspec` to run tests
   * Run `rubocop` to lint code
 
-A skeleton application is provided as starter code. 
+A skeleton application is provided as starter code.
 
 ## Objective
 You are required to build a Calculator class (calculator.rb) and a test suite for it (calculator_spec.rb).
@@ -26,7 +26,7 @@ As the writer of the code to pass the test, you want to implement the bare minim
 
 #### Tasks
 0. **Initialize:* ```my_calculator = Calculator.new(1)``` would assign 1 to the be the starting result of the new my_calculator instance.
-0. **Results:* ```my_calculator.result``` would return the curent result - tt should be readonly. ```my_calculator.reset(x)``` would reset the calculator to x.
+0. **Results:* ```my_calculator.result``` would return the current result - that should be readonly. ```my_calculator.reset(x)``` would reset the calculator to x.
 0. **Addition:** ```my_calculator.add(x)``` would add x to the internal result value, if x can be a valid number
 0. **Subtraction:** ```my_calculator.subtract(x)``` would subtract x from the internal result value, if x can be a valid number
 0. **Multiply:** ```my_calculator.multiply(x)``` would multiply x by the internal result value and save the new value, if x can be a valid number
