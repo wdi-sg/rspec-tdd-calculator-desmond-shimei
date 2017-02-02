@@ -4,7 +4,7 @@ class Calculator
   def initialize(val)
     @result = val
     @operation_history = []
-    @operation_index = 0
+    @operation_index = -1
   end
 
   def reset(val)
@@ -36,7 +36,7 @@ class Calculator
   end
 
   def save_operation(operation, value)
-    @operation_history.slice(@operation_index - 1)
+    @operation_history = @operation_history[0, @operation_index + 1]
     @operation_history.push(operation: operation,
                             value: value)
     @operation_index += 1
@@ -61,8 +61,8 @@ class Calculator
 
   def undo
     unless @operation_history.empty?
-      prev_op = @operation_history[@operation_index - 1][:operation]
-      prev_value = @operation_history[@operation_index - 1][:value]
+      prev_op = @operation_history[@operation_index][:operation]
+      prev_value = @operation_history[@operation_index][:value]
 
       case prev_op
       when 'add'
@@ -83,10 +83,9 @@ class Calculator
   end
 
   def redo
-    p @operation_history
-    if @operation_index < @operation_history.length
-      next_op = @operation_history[@operation_index][:operation]
-      next_value = @operation_history[@operation_index][:value]
+    if (@operation_index + 1) < @operation_history.length
+      next_op = @operation_history[@operation_index + 1][:operation]
+      next_value = @operation_history[@operation_index + 1][:value]
 
       case next_op
       when 'add'

@@ -134,7 +134,7 @@ describe Calculator do
     end
 
     it 'can redo division' do
-      @new_calculator.divide(2).undo
+      @new_calculator.divide(2).undo # index 0, length 1 || # index -1, length 1
       expect(@new_calculator.result).to eq(6)
       @new_calculator.redo
       expect(@new_calculator.result).to eq(3)
@@ -150,7 +150,7 @@ describe Calculator do
       expect(@new_calculator.result).to eq(16)
     end
 
-    it 'can does not allow redos after a new operation' do
+    it 'does not allow redos after a new operation' do
       @new_calculator.multiply(6)
       @new_calculator.divide(3)
       expect(@new_calculator.result).to eq(12)
@@ -162,5 +162,4 @@ describe Calculator do
       expect(@new_calculator.result).to eq(216)
     end
   end
-
 end
