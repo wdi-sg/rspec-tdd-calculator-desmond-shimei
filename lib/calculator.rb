@@ -23,12 +23,12 @@ class Calculator
     self
   end
 
-  def multiply
+  def multiply(x)
     @number *= x
     self
   end
 
-  def divide
+  def divide(x)
     @number /= x
     self
   end
