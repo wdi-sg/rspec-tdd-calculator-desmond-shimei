@@ -10,7 +10,7 @@ describe "Initialization" do
     it "is an instance of the Calculator class" do
       expect(@calculator).to be_instance_of(Calculator)
   end
-end
+
 describe 'Accessors' do
   it 'should return current results' do
     expect(@calculator.result).to eq(1)
@@ -59,11 +59,12 @@ end
       expect(@calculator.operation('add', 5)).to eq (6)
     end
 
-    it 'should undo the previous operation' do
-      @calculator.add(5)
-      @calculator.undo
-      expect(@calculator.undo).to eq (1)
+      it 'should undo the previous operation' do
+        @calculator.add(5)
+        @calculator.undo
+        expect(@calculator.undo).to eq (1)
 
-    end
+      end
     end
   end
+end
