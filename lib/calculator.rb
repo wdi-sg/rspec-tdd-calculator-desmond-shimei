@@ -33,12 +33,23 @@ class Calculator
     self
   end
 
-  def undo
+  def operation(x, y)
+    if x == 'add'
+      add(y)
+    elsif x == 'subtract'
+      subtract(y)
+    elsif x == 'multiply'
+      multiply(y)
+    elsif x == 'divide'
+      divide(y)
+    else
+      p 'Wrong operation'
+    end
+  end
 
+  def undo
   end
 
   def redo
-
   end
-
 end
