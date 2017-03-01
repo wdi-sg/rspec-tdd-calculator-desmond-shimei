@@ -9,24 +9,28 @@ class Calculator
     @number
   end
 
-  def reset
-    @number = 0
+  def reset(x)
+    @number = x
   end
 
-  def add
-
+  def add(x)
+    @number += x
+    self
   end
 
-  def subtract
-
+  def subtract(x)
+    @number -= x
+    self
   end
 
   def multiply
-
+    @number *= x
+    self
   end
 
   def divide
-
+    @number /= x
+    self
   end
 
   def undo
