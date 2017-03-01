@@ -63,7 +63,13 @@ end
     it 'should undo the previous operation' do
       @calculator.add(5)
       @calculator.undo
-      expect(@calculator.undo).to eq(1)
+      expect(@calculator.undo).to eq(15)
+    end
+
+    it 'should redo the previous operation' do
+      @calculator.add(5)
+      @calculator.redo
+      expect(@calculator.undo).to eq(20)
     end
   end
 end
