@@ -3,7 +3,7 @@ require_relative '../lib/calculator'
 
 describe Calculator do
   before(:context) do
-    # initialize calculator
+   @c
   end
 
   # Tests go here
