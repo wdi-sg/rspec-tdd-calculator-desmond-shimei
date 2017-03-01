@@ -1,13 +1,16 @@
 require_relative 'spec_helper'
 require_relative '../lib/calculator'
 
-
-
 describe Calculator do
   before(:context) do
     @calculator = Calculator.new(1)
   end
 
+describe "Initialization" do
+    it "is an instance of the Calculator class" do
+      expect(@calculator).to be_instance_of(Calculator)
+  end
+end
 describe 'Accessors' do
   it 'should return current results' do
     expect(@calculator.result).to eq(1)
